@@ -23,9 +23,9 @@
             align-items: center;
             height: 100vh;
             overflow: hidden;
-            background-image: url('./imagem/foto2.jpg'); 
-            background-size: cover; 
-            background-repeat: no-repeat; 
+            background-image: url('./imagem/foto2.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
             background-position: center;
             margin: 0;
             font-family: 'PT Sans', sans-serif;
@@ -38,7 +38,7 @@
             display: flex;
             flex-direction: row;
             min-width: 800px;
-            backdrop-filter: blur(3px); 
+            backdrop-filter: blur(3px);
             box-shadow: var(--sombra-box);
             background-color: var(--cor-fundo-box);
         }
@@ -90,7 +90,7 @@
         <div id="left">
             <img id="foto" src="./imagem/foto.png" alt="Foto Pessoal">
         </div>
-        <div id="right"> 
+        <div id="right">
             <h1>Sobre mim...</h1>
             <div class="sobre">
                 Olá! Meu nome é Wesley Fuchs Garcia, tenho 27 anos;
