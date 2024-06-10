@@ -1,0 +1,65 @@
+/* style.css */
+
+:root {
+    --cor-fundo-box: rgba(255, 255, 255, 0.1);
+    --cor-texto: #333;
+    --cor-fundo-sobre: #f5f5dc;
+    --sombra-box: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --cor-nav-bg: rgba(255, 255, 255, 0.8);
+    --cor-nav-hover: #555;
+    --cor-nav-text: #333;
+    --cor-nav-text-hover: #fff;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url('./imagem/foto2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    background-color: var(--cor-fundo-sobre);
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--cor-texto);
+    margin: 0 0 10px;
+}
+
+.sobre {
+    font-family: 'Comfortaa', sans-serif;
+    background-color: var(--cor-fundo-sobre);
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: var(--cor-texto);
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--cor-nav-text);
+}
+
+nav ul li a:hover {
+    color: var(--cor-nav-text-hover);
+}
