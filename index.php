@@ -9,13 +9,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
+
     <style>
-        :root {
-            --cor-fundo-box: rgba(255, 255, 255, 0.1);
-            --cor-texto: #333;
-            --cor-fundo-sobre: #f5f5dc;
-            --sombra-box: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
+:root {
+    --cor-fundo-box: rgba(255, 255, 255, 0.1);
+    --cor-texto: #333;
+    --cor-fundo-sobre: #f5f5dc;
+    --sombra-box: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --cor-nav-bg: rgba(255, 255, 255, 0.8);
+    --cor-nav-hover: #555;
+    --cor-nav-text: #333;
+    --cor-nav-text-hover: #fff;
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
 
         body {
             display: flex;
@@ -23,9 +46,9 @@
             align-items: center;
             height: 100vh;
             overflow: hidden;
-            background-image: url('./imagem/foto2.jpg'); 
-            background-size: cover; 
-            background-repeat: no-repeat; 
+            background-image: url('./imagem/foto2.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
             background-position: center;
             margin: 0;
             font-family: 'PT Sans', sans-serif;
@@ -38,7 +61,7 @@
             display: flex;
             flex-direction: row;
             min-width: 800px;
-            backdrop-filter: blur(3px); 
+            backdrop-filter: blur(3px);
             box-shadow: var(--sombra-box);
             background-color: var(--cor-fundo-box);
         }
@@ -83,14 +106,32 @@
             height: 200px;
             border-radius: 50%;
         }
+       
     </style>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio - Wesley Fuchs Garcia</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <div id="container">
+        
+        <nav>
+            <ul>
+                <li><a href="porti.html">Home</a></li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+
     <div id="box">
         <div id="left">
             <img id="foto" src="./imagem/foto.png" alt="Foto Pessoal">
         </div>
-        <div id="right"> 
+        <div id="right">
             <h1>Sobre mim...</h1>
             <div class="sobre">
                 Olá! Meu nome é Wesley Fuchs Garcia, tenho 27 anos;
