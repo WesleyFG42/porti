@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato - Meu Portfólio</title>
-    <link rel="stylesheet" href="./style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -31,39 +30,6 @@
             background-position: center;
             margin: 0;
             font-family: 'PT Sans', sans-serif;
-        }
-
-        header {
-            width: 100%;
-            background-color: var(--cor-nav-bg);
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            padding: 10px 0;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        header nav ul {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        header nav ul li {
-            margin: 0 15px;
-        }
-
-        header nav ul li a {
-            text-decoration: none;
-            color: var(--cor-nav-text);
-            font-weight: bold;
-        }
-
-        header nav ul li a:hover {
-            color: var(--cor-nav-hover);
         }
 
         main {
@@ -135,14 +101,7 @@
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="porti.html">Home</a></li>
-                <li><a href="contact.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+    <script src="loadHeader.js"></script>
     <main>
         <h1>Meu Contato</h1>
         <form id="contactForm">
@@ -159,22 +118,5 @@
         </form>
         <div id="formMessage" class="message"></div>
     </main>
-    <script>
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            var name = document.getElementById('name').value.trim();
-            var email = document.getElementById('email').value.trim();
-            var message = document.getElementById('message').value.trim();
-            var formMessage = document.getElementById('formMessage');
-
-            if (name === '' || email === '' || message === '') {
-                formMessage.textContent = 'Preencha todos os campos';
-                formMessage.className = 'message error';
-            } else {
-                formMessage.textContent = 'Mensagem enviada com sucesso';
-                formMessage.className = 'message success';
-        });
-    </script>
 </body>
 </html>

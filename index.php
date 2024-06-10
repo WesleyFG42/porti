@@ -4,41 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfólio - Wesley Fuchs Garcia</title>
-    <link rel="stylesheet" href="./style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
-
     <style>
-:root {
-    --cor-fundo-box: rgba(255, 255, 255, 0.1);
-    --cor-texto: #333;
-    --cor-fundo-sobre: #f5f5dc;
-    --sombra-box: 0 4px 8px rgba(0, 0, 0, 0.1);
-    --cor-nav-bg: rgba(255, 255, 255, 0.8);
-    --cor-nav-hover: #555;
-    --cor-nav-text: #333;
-    --cor-nav-text-hover: #fff;
-}
-
-form input, form textarea {
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 100%;
-}
-
-form button {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #333;
-    color: #fff;
-    cursor: pointer;
-    font-weight: bold;
-}
+        :root {
+            --cor-fundo-box: rgba(255, 255, 255, 0.1);
+            --cor-texto: #333;
+            --cor-fundo-sobre: #f5f5dc;
+            --sombra-box: 0 4px 8px rgba(0, 0, 0, 0.1);
+            --cor-nav-bg: rgba(255, 255, 255, 0.8);
+            --cor-nav-hover: #555;
+            --cor-nav-text: #333;
+            --cor-nav-text-hover: #fff;
+        }
 
         body {
             display: flex;
@@ -106,27 +85,10 @@ form button {
             height: 200px;
             border-radius: 50%;
         }
-       
     </style>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio - Wesley Fuchs Garcia</title>
-    <link rel="stylesheet" href="./style/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <div id="container">
-        
-        <nav>
-            <ul>
-                <li><a href="porti.html">Home</a></li>
-                <li><a href="contact.html">Contato</a></li>
-            </ul>
-
+    <script src="loadHeader.js"></script>
     <div id="box">
         <div id="left">
             <img id="foto" src="./imagem/foto.png" alt="Foto Pessoal">
